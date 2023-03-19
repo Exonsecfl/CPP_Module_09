@@ -38,6 +38,7 @@
         "optional": "cpp",
         "ranges": "cpp",
         "tuple": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "list": "cpp"
     }
 }

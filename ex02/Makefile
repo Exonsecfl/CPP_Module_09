@@ -1,8 +1,9 @@
-NAME	=	RPN
+NAME	=	PmergeMe
 # sources --------------------------------------------------
 SRCD	=	/
 SRCS	=	$(SRCD)/main.cpp \
-			$(SRCD)/RPN.cpp
+			$(SRCD)/PmergeMe_List.cpp \
+			$(SRCD)/PmergeMe_Vector.cpp
 # sources --------------------------------------------------
 
 UNAME := $(shell uname -s)
