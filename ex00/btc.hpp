@@ -8,13 +8,19 @@
 #define		BLU	"\033[34;1m"
 #define		NOC "\033[0m"
 
+
 #include <fstream>
 #include <iostream>
 #include <string>
-#include "split_line.class.hpp"
+#include <stdlib.h>
+#include "BitcoinExchange.hpp"
 
-
-
-
+// Structure to hold the date and de value/echange rate
+struct s_line {
+    std::string date;
+    std::string value;
+    std::string comment;
+    double value_d;
+};
 
 #endif

@@ -1,8 +1,8 @@
-NAME	=	btc
+NAME	=	rpn
 # sources --------------------------------------------------
 SRCD	=	/
 SRCS	=	$(SRCD)/main.cpp \
-			$(SRCD)/BitcoinExchange.cpp
+			$(SRCD)/RPN.cpp
 # sources --------------------------------------------------
 
 UNAME := $(shell uname -s)
