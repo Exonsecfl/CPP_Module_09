@@ -6,18 +6,17 @@ PmergeMe_List::PmergeMe_List(int argc, char *argv[]): _size(argc -1)
 
     if (_size == 0)
     {
-        std::cerr << "Erreur: arguments expected" << std::endl;
+        std::cout << "Erreur: arguments expected" << std::endl;
         exit(EXIT_FAILURE);
     }
 
-    for (int i = 0 ; i < _size ; i++)
+    for (int i = 1 ; i < argc ; i++)
     {
         int valeur = atoi(argv[i]);
-        if (valeur <= 0)
+        if (valeur < 0)
         {
-            valeur *= -1;
-            //std::cerr << "Erreur: negative value" << std::endl;
-            //exit(EXIT_FAILURE);
+            std::cout << "Erreur: negative value" << std::endl;
+            exit(EXIT_FAILURE);
         }
 
         _bucket.push_back(valeur);
@@ -41,7 +40,7 @@ void PmergeMe_List::test()
 
     _bucket.sort();
 
-    // print unsorted list
+    // print sorted list
     std::cout << "After: ";
 
     bucketIterator = _bucket.begin();
